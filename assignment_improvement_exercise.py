@@ -4,7 +4,7 @@
 
 import math
 
-r = int(input("please enter the radius of the circle: "))
+r = float(input("please enter the radius of the circle: "))
 
 c = 2 * math.pi * r
 c = round(c,2)
