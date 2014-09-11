@@ -1,0 +1,10 @@
+print("Please enter a number")
+num1 = float(input())
+print("Please enter a second number")
+num2 = float(input())
+print("Please enter a third number")
+num3 = float(input())
+print("Please enter a fourth number")
+num4 = float(input())
+ans = num1 + num2 + num3 + num4
+print("the sum of those numbers is {0}".format(ans))
