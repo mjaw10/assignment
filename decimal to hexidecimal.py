@@ -10,19 +10,19 @@ while DecimalValue > 0:
 no_of_bits = len(BinaryString)
 
 if no_of_bits == 1:
-    BinaryString = str(0000000) + BinaryString
+    BinaryString = "0000000" + BinaryString
 elif no_of_bits == 2:
-    BinaryString = str(000000) + BinaryString
+    BinaryString = "000000" + BinaryString
 elif no_of_bits == 3:
-    BinaryString = str(00000) + BinaryString
+    BinaryString = "00000" + BinaryString
 elif no_of_bits == 4:
-    BinaryString = str(0000) + BinaryString
+    BinaryString = "0000" + BinaryString
 elif no_of_bits == 5:
-    BinaryString = str(000) + BinaryString
+    BinaryString = "000" + BinaryString
 elif no_of_bits == 6:
-    BinaryString = str(00) + BinaryString
+    BinaryString = "00" + BinaryString
 elif no_of_bits == 7:
-    BinaryString = str(0) + BinaryString
+    BinaryString = "0" + BinaryString
 else:
     BinaryString = BinaryString
 
