@@ -2,7 +2,7 @@
 #18/09/14
 #This program will change a number from decimal to hexidecimal
 
-DecimalValue = int(input("Enter an interger between 0 and 4095: "))
+DecimalValue = int(input("Enter an integer between 0 and 4095: "))
 BinaryString = ""
 while DecimalValue > 0:
     BinaryString = str(DecimalValue % 2) + BinaryString
