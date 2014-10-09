@@ -1,8 +1,10 @@
 #Matthew Wadkin
 #18/09/14
 #This program will change a number from decimal to hexidecimal
-
-DecimalValue = int(input("Enter an integer between 0 and 4095: "))
+DecimalValue = -1
+while DecimalValue > 4095 or DecimalValue < 0:
+    DecimalValue = int(input("Enter an integer between 0 and 4095: "))
+    
 BinaryString = ""
 while DecimalValue > 0:
     BinaryString = str(DecimalValue % 2) + BinaryString
@@ -10,32 +12,10 @@ while DecimalValue > 0:
     
 no_of_bits = len(BinaryString)
 
-if no_of_bits == 0:
-    BinaryString = "000000000000" + BinaryString
-elif no_of_bits == 1:
-    BinaryString = "00000000000" + BinaryString
-elif no_of_bits == 2:
-    BinaryString = "0000000000" + BinaryString
-elif no_of_bits == 3:
-    BinaryString = "000000000" + BinaryString
-elif no_of_bits == 4:
-    BinaryString = "00000000" + BinaryString
-elif no_of_bits == 5:
-    BinaryString = "0000000" + BinaryString
-elif no_of_bits == 6:
-    BinaryString = "000000" + BinaryString
-elif no_of_bits == 7:
-    BinaryString = "00000" + BinaryString
-elif no_of_bits == 8:
-    BinaryString = "0000" + BinaryString
-elif no_of_bits == 9:
-    BinaryString = "000" + BinaryString
-elif no_of_bits == 10:
-    BinaryString = "00" + BinaryString
-elif no_of_bits == 11:
+no_of_bits = no_of_bits- 12
+while no_of_bits < 0:
     BinaryString = "0" + BinaryString
-else:
-    BinaryString = BinaryString
+    no_of_bits = no_of_bits + 1
 
 bit12 = int(BinaryString[0])
 bit11 = int(BinaryString[1])
