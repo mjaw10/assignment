@@ -1,6 +1,7 @@
 #Matthew Wadkin
 #18/09/14
 #This program will change a number from decimal to hexidecimal
+
 DecimalValue = -1
 while DecimalValue > 4095 or DecimalValue < 0:
     DecimalValue = int(input("Enter an integer between 0 and 4095: "))
@@ -12,7 +13,7 @@ while DecimalValue > 0:
     
 no_of_bits = len(BinaryString)
 
-no_of_bits = no_of_bits- 12
+no_of_bits = no_of_bits - 12
 while no_of_bits < 0:
     BinaryString = "0" + BinaryString
     no_of_bits = no_of_bits + 1
@@ -149,3 +150,4 @@ else:
     hex0 = "F"
 
 print("Your number in hexidecimal is {0}{1}{2}".format(hex2,hex1,hex0))
+
